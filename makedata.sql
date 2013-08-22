@@ -1,7 +1,7 @@
-CREATE DATABASE `stickynotes` DEFAULT CHARACTER SET utf8  DEFAULT COLLATE utf8_general_ci; 
+CREATE DATABASE IF NOT EXISTS `stickynotes` DEFAULT CHARACTER SET utf8  DEFAULT COLLATE utf8_general_ci; 
 USE `stickynotes`;
 CREATE USER 'www-data'@'localhost' IDENTIFIED BY 'www-data';
-GRANT ALL PRIVILEGES ON `stickynotes`.* TO 'www-data'@'localhost';
+GRANT ALL PRIVILEGES ON `stickynotes` . * TO 'www-data'@'localhost';
 
 DROP TABLE IF EXISTS `stickynotes`.`stickynotes` ;
 CREATE TABLE IF NOT EXISTS `stickynotes`.`stickynotes` (
