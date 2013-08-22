@@ -1,0 +1,11 @@
+mkdir module
+mkdir module/$1
+mkdir module/$1/config
+mkdir module/$1/src 
+mkdir module/$1/src/$1
+mkdir module/$1/src/$1/Controller 
+mkdir module/$1/src/$1/Form 
+mkdir module/$1/src/$1/Model 
+mkdir module/$1/view
+mkdir module/$1/view/$2 
+mkdir module/$1/view/$2/$2
